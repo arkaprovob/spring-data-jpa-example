@@ -10,6 +10,7 @@ public class Table2 {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "table2_id")
     private Long id;
+    @Column(name = "arc_type")
     private String arcType;
     private String gen;
 

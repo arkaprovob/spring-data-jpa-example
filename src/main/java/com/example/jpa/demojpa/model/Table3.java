@@ -9,6 +9,7 @@ public class Table3 {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "table3_id")
     private Long id;
+    @Column(name = "mapping")
     private String mapping;
     private String functionBody;
 
