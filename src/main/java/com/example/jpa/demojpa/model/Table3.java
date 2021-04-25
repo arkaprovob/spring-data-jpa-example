@@ -3,7 +3,7 @@ package com.example.jpa.demojpa.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "table3",schema = "public")
+@Table(name = "table3", schema = "public")
 public class Table3 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

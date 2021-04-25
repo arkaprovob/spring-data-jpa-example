@@ -5,6 +5,8 @@ import com.example.jpa.demojpa.service.SampleService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class WebApi {
 
@@ -16,8 +18,8 @@ public class WebApi {
 
 
     @GetMapping("/")
-    public Table1 saveSampleEntry(){
-        return sampleService.saveEntry(null);
+    public List<Table1> saveSampleEntry() {
+        return sampleService.saveEntries(null);
     }
 
 }

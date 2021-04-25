@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface Table3Repository extends JpaRepository<Table3,Long> {
+public interface Table3Repository extends JpaRepository<Table3, Long> {
 }
