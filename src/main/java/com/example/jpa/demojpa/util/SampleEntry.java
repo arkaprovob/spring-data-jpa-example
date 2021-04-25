@@ -9,26 +9,26 @@ import java.util.List;
 
 public class SampleEntry {
 
-    private static Table3 table3Entry0 = new Table3("sampleMapping",
+    private static final Table3 table3Entry0 = new Table3("sampleMapping",
             "fun(a,b):int{return a+b}");
-    private static Table3 table3Entry1 = new Table3("newMapping",
+    private static final Table3 table3Entry1 = new Table3("newMapping",
             "fun(b):int{return b+b}");
-    private static Table3 table3Entry2 = new Table3("negativeInteger",
+    private static final Table3 table3Entry2 = new Table3("negativeInteger",
             "fun(a):int{return -a}");
-    private static Table3 table3Entry3 = new Table3("randomMapping",
+    private static final Table3 table3Entry3 = new Table3("randomMapping",
             "fun(0):int{return rand(5)}");
 
 
-    private static Table2 table2Entry0 = new Table2("default", "skylake");
-    private static Table2 table2Entry1 = new Table2("alpha", "m1");
-    private static Table2 table2Entry2 = new Table2("beta", "arm");
-    private static Table2 table2Entry3 = new Table2("rc", "x86");
+    private static final Table2 table2Entry0 = new Table2("default", "skylake");
+    private static final Table2 table2Entry1 = new Table2("alpha", "m1");
+    private static final Table2 table2Entry2 = new Table2("beta", "arm");
+    private static final Table2 table2Entry3 = new Table2("rc", "x86");
 
 
-    private static Table1 table1Entry0 = new Table1("first sample", table2Entry0, table3Entry0);
-    private static Table1 table1Entry1 = new Table1("second sample", table2Entry1, table3Entry1);
-    private static Table1 table1Entry2 = new Table1("Third sample", table2Entry2, table3Entry2);
-    private static Table1 table1Entry3 = new Table1("Fourth sample", table2Entry3, table3Entry3);
+    private static final Table1 table1Entry0 = new Table1("first sample", table2Entry0, table3Entry0);
+    private static final Table1 table1Entry1 = new Table1("second sample", table2Entry1, table3Entry1);
+    private static final Table1 table1Entry2 = new Table1("Third sample", table2Entry2, table3Entry2);
+    private static final Table1 table1Entry3 = new Table1("Fourth sample", table2Entry3, table3Entry3);
 
 
     public static Table1 getSampleEntry() {
