@@ -20,9 +20,9 @@ public class SampleEntry {
 
 
     private static Table2 table2Entry0 = new Table2("default", "skylake");
-    private static Table2 table2Entry1 = new Table2("default", "m1");
-    private static Table2 table2Entry2 = new Table2("default", "arm");
-    private static Table2 table2Entry3 = new Table2("default", "x86");
+    private static Table2 table2Entry1 = new Table2("alpha", "m1");
+    private static Table2 table2Entry2 = new Table2("beta", "arm");
+    private static Table2 table2Entry3 = new Table2("rc", "x86");
 
 
     private static Table1 table1Entry0 = new Table1("first sample", table2Entry0, table3Entry0);
