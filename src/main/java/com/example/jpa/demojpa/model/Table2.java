@@ -12,6 +12,7 @@ public class Table2 {
     private Long id;
     @Column(name = "arc_type")
     private String arcType;
+    @Column(name = "gen")
     private String gen;
 
     public Table2() {

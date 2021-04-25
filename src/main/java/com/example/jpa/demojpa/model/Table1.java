@@ -12,11 +12,14 @@ public class Table1 {
     private Long id;
     private String name;
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_table1", referencedColumnName = "arc_type")
+    @JoinColumns({
+            @JoinColumn(name = "fk0_table2", referencedColumnName = "arc_type"),
+            @JoinColumn(name = "fk1_table2", referencedColumnName = "gen")
+    })
     private Table2 table2;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_table2", referencedColumnName = "mapping")
+    @JoinColumn(name = "fk_table3", referencedColumnName = "mapping")
     private Table3 table3;
 
     public Table1() {
